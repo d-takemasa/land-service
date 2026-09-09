@@ -7,8 +7,9 @@
 <meta name="description" content="茨城県つくば市のランドサービス株式会社。解体・遺品整理、不動産、植物販売（オリーブ）、ガレージシェルター卸売、レンタルスペースを手がける複合事業会社です。">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Yusei+Magic&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/home.css">
 </head>
-<body>
+<body class="home">
 
 <header class="site-header">
   <div class="container header-inner">
@@ -30,7 +31,7 @@
 </header>
 
 <section class="row" style="gap:0;align-items:stretch;min-height:600px">
-  <div class="col" style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:64px 56px">
+  <div class="col" style="flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:64px 56px" data-reveal="up">
     <div>
       <p class="eyebrow">LAND SERVICE CO., LTD.</p>
       <p class="h1" style="font-size:52px">壊す。整える。<br>そして次をつくる。</p>
@@ -41,15 +42,17 @@
       <a href="company.html" class="btn lg">会社案内</a>
     </div>
   </div>
-  <div class="col ph" style="flex:1.35;min-height:420px">
-    <span class="cap">新社屋 外観</span>
+  <div class="col ph has-img" style="flex:1.35;min-height:420px;transition-delay:.15s" data-reveal="up">
+    <video class="photo" src="assets/video/hero-slideshow.mp4" poster="assets/img/hero-slideshow-poster.jpg" autoplay muted loop playsinline></video>
   </div>
 </section>
 
 <section class="section divider" style="border-top:1px solid var(--ink)">
   <div class="container row">
-    <div class="col ph" style="flex:1.4;height:320px"><span class="cap">解体現場</span></div>
-    <div class="col">
+    <div class="col ph has-img" style="flex:1.4;height:320px" data-reveal="left">
+      <img class="photo" src="assets/img/kaitai.jpg" alt="解体現場の様子">
+    </div>
+    <div class="col" data-reveal="right">
       <p class="numl">01 / 05</p>
       <p class="h2" style="margin-top:8px">解体・遺品整理事業</p>
       <p class="p">建物解体・空き家解体・内装解体・外構解体・整地工事・遺品整理・不用品回収。自社施工と国家資格者監修で、内訳の明確な明朗会計をお約束します。</p>
@@ -60,8 +63,10 @@
 
 <section class="section divider">
   <div class="container row rev">
-    <div class="col ph steel" style="flex:1.4;height:320px"><span class="cap">土地・空き家</span></div>
-    <div class="col">
+    <div class="col ph has-img" style="flex:1.4;height:320px" data-reveal="right">
+      <img class="photo" src="assets/img/fudousan.jpg" alt="不動産事業">
+    </div>
+    <div class="col" data-reveal="left">
       <p class="numl">02 / 05</p>
       <p class="h2" style="margin-top:8px">不動産事業</p>
       <p class="p">宅地建物取引業免許を保有し、全日本不動産協会に加盟。空地・空き家の買取に対応し、解体事業との一括対応も可能です。</p>
@@ -74,22 +79,28 @@
   <div class="container">
     <p class="eyebrow">03 – 05 / 05</p>
     <div class="g3">
-      <div>
-        <div class="ph olive" style="height:220px"><span class="cap">オリーブ</span></div>
+      <div data-reveal="up">
+        <div class="ph has-img" style="height:220px">
+          <img class="photo" src="assets/img/olive.jpg" alt="植物販売事業 オリーブの木">
+        </div>
         <p class="numl" style="margin-top:14px">03 / 05</p>
         <p class="h3" style="margin-top:6px">植物販売事業</p>
         <p class="p">オリーブの木を80万円〜、相場より約2割安でご提供します。</p>
         <a href="olive.html" class="btn block" style="margin-top:14px">事業を見る</a>
       </div>
-      <div>
-        <div class="ph" style="height:220px"><span class="cap">シェルター</span></div>
+      <div data-reveal="up" style="transition-delay:.1s">
+        <div class="ph has-img" style="height:220px">
+          <img class="photo" src="assets/img/garage.jpg" alt="ガレージシェルター卸売事業">
+        </div>
         <p class="numl" style="margin-top:14px">04 / 05</p>
         <p class="h3" style="margin-top:6px">ガレージシェルター卸売</p>
         <p class="p">法人・工務店様向けの卸売。サイズ・仕様を幅広くラインナップ。</p>
         <a href="garage.html" class="btn block" style="margin-top:14px">事業を見る</a>
       </div>
-      <div>
-        <div class="ph warm" style="height:220px"><span class="cap">スペース内観</span></div>
+      <div data-reveal="up" style="transition-delay:.2s">
+        <div class="ph has-img" style="height:220px">
+          <img class="photo" src="assets/img/rental-space.jpg" alt="レンタルスペース事業">
+        </div>
         <p class="numl" style="margin-top:14px">05 / 05</p>
         <p class="h3" style="margin-top:6px">レンタルスペース</p>
         <p class="p">本社裏のシェルターを撮影・イベント・作業場として時間貸し。</p>
@@ -101,13 +112,13 @@
 
 <section class="section section-alt">
   <div class="container row top">
-    <div class="col" style="flex:1">
+    <div class="col" style="flex:1" data-reveal="left">
       <p class="eyebrow">OUR PHILOSOPHY</p>
       <p class="h2" style="font-size:32px">新社屋に、<br>考え方を残した。</p>
       <p class="p" style="margin-top:14px">壊す仕事だからこそ、自分たちの拠点にはこだわりました。2025年、つくばに新社屋を建て替え。そこに込めた考え方は、会社案内でご紹介しています。</p>
       <a href="company.html" class="btn" style="margin-top:18px">会社案内へ</a>
     </div>
-    <div class="col" style="flex:1.2">
+    <div class="col" style="flex:1.2" data-reveal="right">
       <div class="g2">
         <div><p class="stat-num">1,200+</p><p class="numl" style="margin-top:8px">施工実績（累計）</p></div>
         <div><p class="stat-num">4</p><p class="numl" style="margin-top:8px">拠点（つくば・水戸・笠間・桜川）</p></div>
@@ -120,23 +131,23 @@
 
 <section class="section">
   <div class="container">
-    <p class="eyebrow">NEWS</p>
+    <p class="eyebrow" data-reveal="up">NEWS</p>
     <div class="stack">
-      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);align-items:center;gap:24px">
+      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);align-items:center;gap:24px" data-reveal="up">
         <div class="ph" style="width:120px;height:72px;flex-shrink:0"></div>
         <p class="numl" style="width:110px;flex-shrink:0">2026.08.20</p>
         <p class="numl" style="width:100px;flex-shrink:0">解体</p>
         <p class="h3" style="flex:1;margin:0">お盆期間の営業時間についてのお知らせ</p>
         <span class="numl">›</span>
       </a>
-      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);align-items:center;gap:24px">
+      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);align-items:center;gap:24px;transition-delay:.08s" data-reveal="up">
         <div class="ph olive" style="width:120px;height:72px;flex-shrink:0"></div>
         <p class="numl" style="width:110px;flex-shrink:0">2026.08.02</p>
         <p class="numl" style="width:100px;flex-shrink:0">オリーブ</p>
         <p class="h3" style="flex:1;margin:0">大鉢オリーブの新規入荷（樹高2.0〜3.0m）</p>
         <span class="numl">›</span>
       </a>
-      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-items:center;gap:24px">
+      <a href="blog.html" class="row" style="padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-items:center;gap:24px;transition-delay:.16s" data-reveal="up">
         <div class="ph steel" style="width:120px;height:72px;flex-shrink:0"></div>
         <p class="numl" style="width:110px;flex-shrink:0">2026.07.15</p>
         <p class="numl" style="width:100px;flex-shrink:0">お知らせ</p>
@@ -148,8 +159,9 @@
   </div>
 </section>
 
-<section class="ph" style="height:260px;border-top:1px solid var(--line)">
-  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;z-index:1">
+<section class="ph has-img dim" style="height:260px;border-top:1px solid var(--line)">
+  <img class="photo" src="assets/img/hero-office.jpg" alt="ランドサービス株式会社 新社屋">
+  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;z-index:1" data-reveal="up">
     <div>
       <p class="h2" style="color:#fff">見積もり・ご相談は無料です</p>
       <div class="cta-row" style="margin-top:16px;justify-content:center">

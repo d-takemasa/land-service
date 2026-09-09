@@ -1,0 +1,44 @@
+/* ===== Homepage-only additions: real photos, readability, scroll reveal ===== */
+/* Scoped to body.home so other pages are unaffected. */
+
+/* ---- real photo treatment (replaces the wireframe placeholder look) ---- */
+.ph.has-img{background:none}
+.ph.has-img::before{content:none}
+.ph.has-img::after{content:none}
+.ph.has-img > img.photo,
+.ph.has-img > video.photo{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s cubic-bezier(.22,.61,.36,1);
+}
+.ph.has-img:hover > img.photo,
+.ph.has-img:hover > video.photo{transform:scale(1.045)}
+.ph.has-img.dim::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,19,17,.28),rgba(20,19,17,.58));
+}
+
+/* ---- readability: larger, more relaxed type on the homepage ---- */
+body.home .lead{font-size:17px;line-height:1.95;letter-spacing:.01em}
+body.home .p{font-size:15px;line-height:2}
+body.home .h1{line-height:1.32}
+body.home .h2{line-height:1.45}
+body.home .eyebrow{font-size:12px;letter-spacing:.1em}
+
+/* ---- scroll reveal ---- */
+[data-reveal]{
+  opacity:0;
+  transition:opacity .8s cubic-bezier(.22,.61,.36,1), transform .8s cubic-bezier(.22,.61,.36,1);
+  will-change:opacity,transform;
+}
+[data-reveal="up"]{transform:translateY(28px)}
+[data-reveal="left"]{transform:translateX(-36px)}
+[data-reveal="right"]{transform:translateX(36px)}
+[data-reveal].is-visible{opacity:1;transform:translate(0,0)}
+
+@media (prefers-reduced-motion: reduce){
+  [data-reveal]{transition:none;opacity:1;transform:none}
+}
+
+@media (max-width:960px){
+  [data-reveal="left"],[data-reveal="right"]{transform:translateY(20px)}
+}
