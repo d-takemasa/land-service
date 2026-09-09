@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ｜ランドサービス株式会社</title>
+<meta name="description" content="解体・遺品整理、不動産、植物販売、ガレージシェルター卸売、レンタルスペース。どの事業でもこの1ページで受け付けます。">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">ランドサービス<span>LAND SERVICE CO., LTD.</span></a>
+    <nav class="site-nav" id="siteNav">
+      <a href="company.html">会社案内</a>
+      <a href="kaitai.html">解体・遺品整理</a>
+      <a href="fudousan.html">不動産</a>
+      <a href="olive.html">植物販売</a>
+      <a href="garage.html">ガレージシェルター</a>
+      <a href="rental-space.html">レンタルスペース</a>
+      <a href="blog.html">お知らせ</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn red">お問い合わせ</a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page-head">
+  <p class="numl" style="margin:0 0 12px">HOME ／ お問い合わせ</p>
+  <p class="h1">お問い合わせ<br><span class="sub">CONTACT</span></p>
+  <p class="p" style="margin-top:14px">どの事業でも、この1ページで受け付けます。</p>
+</div>
+
+<section id="sent" class="section-tight" style="padding-top:0">
+  <div class="container row top">
+
+    <div class="col" style="flex:1.5">
+      <p class="eyebrow">フォームからのお問い合わせ</p>
+      <form class="form-panel" data-contact-form>
+        <p class="field-label">お問い合わせ内容の種別 <span class="field-required">*</span></p>
+        <div class="radio-group">
+          <span class="radio-chip"><input type="radio" name="service" id="svc-kaitai" value="kaitai" checked><label for="svc-kaitai">解体・遺品整理</label></span>
+          <span class="radio-chip"><input type="radio" name="service" id="svc-fudousan" value="fudousan"><label for="svc-fudousan">不動産</label></span>
+          <span class="radio-chip"><input type="radio" name="service" id="svc-olive" value="olive"><label for="svc-olive">植物販売（オリーブ）</label></span>
+          <span class="radio-chip"><input type="radio" name="service" id="svc-garage" value="garage"><label for="svc-garage">ガレージシェルター</label></span>
+          <span class="radio-chip"><input type="radio" name="service" id="svc-rental" value="rental"><label for="svc-rental">レンタルスペース</label></span>
+          <span class="radio-chip"><input type="radio" name="service" id="svc-other" value="other"><label for="svc-other">その他</label></span>
+        </div>
+        <p class="field-hint">各事業ページの「お問い合わせ」からお越しの場合、該当項目が自動で選択されます</p>
+
+        <div style="margin-top:12px">
+          <div class="field-row">
+            <div><p class="field-label">会社名</p><p class="field-hint">任意</p></div>
+            <div><input type="text" name="company" autocomplete="organization"></div>
+          </div>
+          <div class="field-row">
+            <div><p class="field-label">お名前 <span class="field-required">*</span></p></div>
+            <div><input type="text" name="name" autocomplete="name" required></div>
+          </div>
+          <div class="field-row">
+            <div><p class="field-label">電話番号 <span class="field-required">*</span></p></div>
+            <div><input type="tel" name="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="field-row">
+            <div><p class="field-label">メールアドレス <span class="field-required">*</span></p></div>
+            <div><input type="email" name="email" autocomplete="email" required></div>
+          </div>
+          <div class="field-row field-optional" data-field-address hidden>
+            <div><p class="field-label">物件所在地</p><p class="field-hint">解体・不動産をご選択の場合にご記入ください</p></div>
+            <div><input type="text" name="address"></div>
+          </div>
+          <div class="field-row">
+            <div><p class="field-label">お問い合わせ内容 <span class="field-required">*</span></p></div>
+            <div><textarea name="message" required></textarea></div>
+          </div>
+          <div class="field-row">
+            <div><p class="field-label">写真の添付</p><p class="field-hint">任意・最大5枚</p></div>
+            <div><label class="upload-box" for="photos">ドラッグ＆ドロップ or ファイル選択<input type="file" id="photos" name="photos" multiple accept="image/*" style="display:none"></label></div>
+          </div>
+        </div>
+
+        <div class="checkline">
+          <input type="checkbox" id="privacy" required>
+          <label class="p" for="privacy" style="margin:0">プライバシーポリシーに同意します</label>
+        </div>
+
+        <button type="submit" class="btn solid red lg" style="margin-top:24px;width:280px;max-width:100%">送信する</button>
+        <p class="field-hint" style="margin-top:10px">送信後、確認のご連絡を差し上げます</p>
+      </form>
+    </div>
+
+    <div class="col" style="flex:1">
+      <p class="eyebrow">お電話・LINE</p>
+      <div class="card pad" style="border-width:1.5px;border-color:var(--ink)">
+        <p class="numl">お急ぎの方はお電話で</p>
+        <p class="h1" style="font-size:32px;margin-top:8px">029-000-0000</p>
+        <p class="p" style="margin-top:8px">受付 8:00-18:00（日祝を除く）</p>
+      </div>
+      <div class="card pad" style="margin-top:16px">
+        <p class="h3">LINE公式アカウント</p>
+        <p class="p" style="margin-top:6px">写真を送るだけで概算をお伝えできます。</p>
+        <div class="row" style="gap:16px;align-items:center;margin-top:16px">
+          <div class="ph" style="width:100px;height:100px;flex-shrink:0"><span class="cap" style="font-size:9px">QR</span></div>
+          <a href="#" class="btn" style="flex:1">友だち追加</a>
+        </div>
+      </div>
+      <div class="card pad" style="margin-top:16px">
+        <p class="h3">営業時間・所在地</p>
+        <p class="p" style="margin-top:6px">8:00-18:00 ／ 日祝休<br>茨城県つくば市○○ 1-2-3</p>
+        <div class="ph steel" style="height:150px;margin-top:14px"><span class="cap">地図</span></div>
+      </div>
+      <div class="card pad" style="margin-top:16px">
+        <p class="h3">よくある質問</p>
+        <div class="faq" style="margin-top:10px">
+          <details open>
+            <summary>見積もりは無料ですか？</summary>
+            <p class="a">はい、解体・不動産・ガレージシェルターいずれも見積もりは無料です。</p>
+          </details>
+          <details>
+            <summary>立ち会いは必要ですか？</summary>
+            <p class="a">現地調査の際は、可能な範囲でお立ち会いをお願いしております。難しい場合はご相談ください。</p>
+          </details>
+          <details>
+            <summary>茨城県外でも対応してもらえますか？</summary>
+            <p class="a">基本的には茨城県内を中心に対応しております。近隣県については個別にご相談ください。</p>
+          </details>
+          <details>
+            <summary>オリーブ・ガレージシェルターはオンライン購入できますか？</summary>
+            <p class="a">現物確認を前提としているため、オンライン購入・カートは設置しておりません。まずはお問い合わせください。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand">
+      <div class="logo">ランドサービス<span>LAND SERVICE CO., LTD.</span></div>
+      <p class="p">茨城県つくば市○○ 1-2-3<br>TEL 029-000-0000<br>営業時間 8:00-18:00（日祝休）</p>
+    </div>
+    <div class="footer-col"><h3>事業</h3><ul>
+      <li><a href="kaitai.html">解体・遺品整理</a></li>
+      <li><a href="fudousan.html">不動産</a></li>
+      <li><a href="olive.html">植物販売</a></li>
+      <li><a href="garage.html">ガレージシェルター</a></li>
+      <li><a href="rental-space.html">レンタルスペース</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>会社情報</h3><ul>
+      <li><a href="company.html">会社案内</a></li>
+      <li><a href="blog.html">お知らせ・ブログ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+    </ul></div>
+    <div class="footer-col"><h3>SNS</h3><ul>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><p class="numl">&copy; 2026 Land Service Co., Ltd.</p></div>
+</footer>
+
+<div class="mobile-cta-bar">
+  <div class="container">
+    <a href="tel:0290000000" class="btn">電話</a>
+    <a href="#" class="btn solid red">LINEで相談</a>
+    <a href="#sent" class="btn">フォーム</a>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
